@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>hr.fer.tel.rovkp</groupId>
+  <artifactId>homework1</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>Homework1Task3</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <description>
+    1st homework assignment; Task 3.
+  </description>
+
+  <organization>
+    <name>ZEMRIS, Fakultet elektrotehnike i računarstva, Sveučilište u Zagrebu</name>
+    <url>http://www.fer.unizg.hr</url>
+  </organization>
+
+  <developers>
+    <developer>
+      <id>Boris.Generalic</id>
+      <name>Boris Generalić</name>
+      <email>boris.generalic@fer.hr</email>
+      <url>http://ferko.fer.hr/people/Boris.Generalic/</url>
+      <organization>ZEMRIS, Fakultet elektrotehnike i računarstva, Sveučilište u Zagrebu</organization>
+      <organizationUrl>http://www.fer.unizg.hr</organizationUrl>
+      <roles>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>
+  </developers>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>hr.fer.tel.rovkp.homework1.task3.Main</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-client</artifactId>
+      <version>2.6.5</version>
+    </dependency>
+  </dependencies>
+
+</project>
